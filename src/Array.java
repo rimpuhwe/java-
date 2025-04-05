@@ -26,6 +26,21 @@ public class Array {
             System.out.print( name + " ");
 
         }
+        System.out.println();
+        // searching an item in string array
+        System.out.print("which fruit do you want:");
+        String fruit = scanner.next();
+        boolean isFound = false;
+        for (String s : fruits) {
+            if (s.equals(fruit)) {
+                System.out.println("you got it");
+                isFound = true;
+                break;
+            }
+        }
+        if(!isFound) {
+            System.out.println("we don't have that one");
+        }
 
 
 
