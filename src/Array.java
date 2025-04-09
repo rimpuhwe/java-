@@ -42,11 +42,16 @@ public class Array {
             System.out.println("we don't have that one");
         }
 
-
-
-
-
+        System.out.println(sum(2,3,4,5));
+    }
+    public static int sum (int ...numbers){
+        int sum  = 0 ;
+        for (int number : numbers) {
+            sum += number ;
+        }
+        return sum;
 
     }
+
 
 }
